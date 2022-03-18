@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 RSpec.describe ExchangeIt::Utils::Uid do
   let(:dummy) { Class.new { include ExchangeIt::Utils::Uid }.new } # таким образом подключили модуль и подцепили его в let
   # Class.new { include ExchangeIt::Utils::Uid } - 'эта часть создаст сам класс как таковой, + new уже инстацирует его'
