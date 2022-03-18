@@ -1,0 +1,20 @@
+require:
+  - rubocop-performance
+  - rubocop-rspec
+
+AllCops: # включаем все новые проверки
+  NewCops: enable
+
+Metrics/BlockLength: # исключаем некоторые проверки которые связаны с автотестами
+  Exclude:
+    - spec/**/*.rb
+
+Layout/LineLength: # исключаем некоторые проверки которые связаны с автотестами
+  Exclude:
+    - spec/**/*.rb
+
+Style/Documentation:
+  Enabled: false # отключаем проверку на написанную документацию
+
+RSpec/MultipleExpectations:
+  Max: 10
